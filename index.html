@@ -1,1 +1,55 @@
+
+
+<html lang="fa">
+<head><meta charset="utf-8">
+<script type="text/javascript" src="/player.js"></script>
+
+
+
+</head>
+
+<body style='padding:0px;margin:0px;background-color:#000;overflow:hidden;'>
 <h2>Magic Player</h2>
+
+<div id="myElement">Loading the player...</div>
+
+<script type="text/javascript">
+var player01 = jwplayer("myElement");    
+player01.setup({	  	
+
+	file:"http://storage.qmery.com/402/38469-256x144.mp4",
+	width: "640",
+	height: "360",
+	androidhls: true,
+	stagevideo: true,
+	aspectratio: "16:9",
+
+	abouttext:"Test",
+	aboutlink:"http://test.com",
+	title:"test",
+	advertising:{   client: 'vast',
+						
+			    "schedule": {
+			      "adbreak-preroll":{
+			        "tag": "https://tag.brainient.com/vast/5676549890113536",
+			        "offset": "pre"
+			      },
+			      "adbreak-overlay":{
+			        "tag": "https://s.vidad.net/vast/?type=nonlinear&site=lV4vbCS9&network=1&network=4&vpaid=yes",
+			        "type": "nonlinear",
+			        "offset": "5"
+			      },},
+	
+			vpaidmode:"enabled",
+			admessage:"XX Second to Finish Ad ",
+			skipmessage:"Second XX",
+			skiptext:"Skip",
+			cuetext:"Advertising",
+           
+				},
+});
+
+</script>
+
+
+</body>
