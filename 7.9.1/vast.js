@@ -2135,7 +2135,7 @@ jwplayer.vast = {},
                 }(this, function() {
                     return function(a, b, c) {
                         var d = new a.key(b).token(),
-                        e = ["/player/jwpc791/7.9.1/all.json"];
+                        e = ["/setup/7.9.1/all.json"];
                         "file:" === window.location.protocol && e.unshift("https:");
                         var f = {
                             canPlayAds: !0
