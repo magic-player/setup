@@ -556,7 +556,7 @@
                 d = {
                     trackerVersion: "2.8.7",
                     serverURL: "https://magic-player.github.io",
-                    serverPath: "/setup" + "/ping.gif?",
+                    serverPath: "setup" + "/ping.gif?",
                     playerVersion: t.version,
                     config: t,
                     SDKPlatform: t.sdkplatform || "0",
