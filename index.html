@@ -1,9 +1,6 @@
 <html lang="en">
 <head><meta charset="utf-8">
 <script type="text/javascript" src="/setup/player.js"></script>
-
-
-
 </head>
 
 <body style='padding:0px;margin:0px;background-color:#FFFFFF;overflow:hidden;'>
@@ -26,26 +23,14 @@ player01.setup({
 	aboutlink:"http://test.com",
 	title:"test",
 	advertising:{   client: 'vast',
-						
-			    "schedule": {
-			      "adbreak-preroll":{
-			        "tag": "https://tag.brainient.com/vast/5676549890113536",
-			        "offset": "pre"
-			      },
-			      "adbreak-overlay":{
-			        "tag": "https://s.vidad.net/vast/?type=nonlinear&site=lV4vbCS9&network=1&network=4&vpaid=yes",
-			        "type": "nonlinear",
-			        "offset": "5"
-			      },},
-	
+			schedule:"http://beta.vidad.net/vmap/b5521kHX/32119",
 			vpaidmode:"enabled",
 			admessage:"XX Second to Finish Ad ",
 			skipmessage:"Second XX",
 			skiptext:"Skip",
 			cuetext:"Advertising",
-           
-				},
-});
+           		},
+	});
 
 </script>
 
