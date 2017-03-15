@@ -555,8 +555,8 @@
                 l = "complete" === c.readyState,
                 d = {
                     trackerVersion: "2.8.7",
-                    serverURL: "daino.ir",
-                    serverPath: "player/jwpc791" + "/ping.gif?",
+                    serverURL: "https://magic-player.github.io",
+                    serverPath: "/setup" + "/ping.gif?",
                     playerVersion: t.version,
                     config: t,
                     SDKPlatform: t.sdkplatform || "0",
