@@ -555,8 +555,8 @@
                 l = "complete" === c.readyState,
                 d = {
                     trackerVersion: "2.8.7",
-                    serverURL: "player.vidad.net",
-                    serverPath: "/ping.gif?",
+                    serverURL: "https://player.vidad.net",
+                    serverPath: "ping.gif?",
                     playerVersion: t.version,
                     config: t,
                     SDKPlatform: t.sdkplatform || "0",
