@@ -1105,7 +1105,7 @@ window.jwplayer = function(e) {
     var i, o;
     i = [], o = function() {
         return {
-            repo: "//magic-player.github.io/setup/",
+            repo: "https://magic-player.github.io/setup/",
             SkinsIncluded: ["seven"],
             SkinsLoadable: ["beelden", "bekle", "five", "glow", "roundster", "six", "stormtrooper", "vapor"],
             dvrSeekLimit: -25
