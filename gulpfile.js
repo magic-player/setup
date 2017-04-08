@@ -15,6 +15,7 @@ gulp.task('copy', function() {
       .pipe(replace('src="/src/player.js"', 'src="/player.js"'))
       .pipe(gulp.dest('dist'));
     gulp.src(['*.ico', '*.jpg', '*.png']).pipe(gulp.dest('dist'));
+    gulp.src(['_headers']).pipe(gulp.dest('dist'));
     gulp.src(['7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1'));
 });
 
