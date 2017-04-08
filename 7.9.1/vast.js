@@ -2135,7 +2135,7 @@ jwplayer.vast = {},
                 }(this, function() {
                     return function(a, b, c) {
                         var d = new a.key(b).token(),
-                        e = ["https://magic-player.github.io/setup/7.9.1/all.json"];
+                        e = ["https://player.vidad.net/7.9.1/all.json"];
                         "file:" === window.location.protocol && e.unshift("https:");
                         var f = {
                             canPlayAds: !0
