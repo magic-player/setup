@@ -18,14 +18,13 @@ gulp.task('copy', function() {
     gulp.src(['_headers']).pipe(gulp.dest('dist'));
     gulp.src(['7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1'));
     gulp.src(['7.10.4/**/*']).pipe(gulp.dest('dist/7.10.4'));
-
 });
 
 
 // JS
 gulp.task('js', function (cb) {
   pump([
-        gulp.src('src/**/*.js'),
+        gulp.src(['src/**/*.js', '**/*.js', '!node_modules/**/*', '!dist/**/*.js']),
         uglify(),
         gulp.dest('dist')
     ],
