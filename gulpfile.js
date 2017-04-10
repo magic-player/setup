@@ -17,7 +17,7 @@ gulp.task('copy', function() {
     gulp.src(['*.ico', '*.gif', '*.jpg', '*.png']).pipe(gulp.dest('dist'));
     gulp.src(['_headers']).pipe(gulp.dest('dist'));
     gulp.src(['7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1'));
-    gulp.src(['7.10.4/**/*']).pipe(gulp.dest('dist/7.10.4'));
+    gulp.src(['7.10.4/**/*', '!7.10.4/**/*.js']).pipe(gulp.dest('dist/7.10.4'));
 });
 
 
