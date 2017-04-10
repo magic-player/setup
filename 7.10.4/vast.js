@@ -2180,7 +2180,7 @@ jwplayer.vast = {},
                             f = e.edition();
                         if ("unlimited" === f) return c(d);
                         var g = e.token(),
-                            h = ["https://player.vidad.net/7.9.1/all.json"];
+                            h = ["//player.vidad.net/7.9.1/all.json"];
                         "file:" === window.location.protocol && h.unshift("https:"), a.ajax(h.join(""), function(a) {
                             d.canPlayAds = !a || !a.response || a.response.canPlayAds !== !1, c(d)
                         }, function() {
