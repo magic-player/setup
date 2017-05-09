@@ -15,7 +15,7 @@ gulp.task('copy', function() {
       .pipe(replace('src="/src/player.js"', 'src="/player.js"'))
       .pipe(gulp.dest('dist'));
     gulp.src(['*.ico', '*.gif', '*.jpg', '*.png']).pipe(gulp.dest('dist'));
-    gulp.src(['_headers', 'crossdomain.xml']).pipe(gulp.dest('dist'));
+    gulp.src(['_headers', 'crossdomain.xml', 'vpaid.xml']).pipe(gulp.dest('dist'));
     gulp.src(['7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1'));
     gulp.src(['7.10.4/**/*', '!7.10.4/**/*.js']).pipe(gulp.dest('dist/7.10.4'));
 });
