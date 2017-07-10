@@ -18,6 +18,7 @@ gulp.task('copy', function() {
     gulp.src(['_headers', 'crossdomain.xml', 'vpaid.xml']).pipe(gulp.dest('dist'));
     gulp.src(['7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1'));
     gulp.src(['7.10.4/**/*', '!7.10.4/**/*.js']).pipe(gulp.dest('dist/7.10.4'));
+    gulp.src(['7.12.1/**/*', '!7.12.1/**/*.js']).pipe(gulp.dest('dist/7.12.1'));
 });
 
 
