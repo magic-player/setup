@@ -1088,7 +1088,7 @@ window.jwplayer = function(e) {
     var i, r;
     i = [], r = function() {
         return {
-            repo: "http://ssl.p.jwpcdn.com/player/v/",
+            repo: "https://player.vidad.net/",
             SkinsIncluded: ["seven"],
             SkinsLoadable: ["beelden", "bekle", "five", "glow", "roundster", "six", "stormtrooper", "vapor"],
             dvrSeekLimit: -25
