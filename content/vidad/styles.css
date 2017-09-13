@@ -1,0 +1,247 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 600px;
+	 height: 250px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 640px;
+	 height: 1300px;
+	 z-index:1;
+} 
+
+ #VectorSmartObject 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 640px;
+	 height: 1367px;
+	 z-index:2;
+} 
+
+ #VectorSmartObject_0 
+{ 
+	 left: 23px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 595px;
+	 height: 1273px;
+	 z-index:3;
+} 
+
+ #VidadLogoWhite 
+{ 
+	 left: 367px; 
+	 top: 144px; 
+	 position: absolute; 
+	 width: 168px;
+	 height: 70px;
+	 z-index:4;
+} 
+
+ #layer_5 
+{ 
+	 left: 175px; 
+	 top: 175px; 
+	 position: absolute; 
+	 width: 164px;
+	 height: 41px;
+	 z-index:5;
+} 
+
+ #layer_6 
+{ 
+	 left: 217px; 
+	 top: 269px; 
+	 position: absolute; 
+	 width: 206px;
+	 height: 42px;
+	 z-index:6;
+} 
+
+ #layer_7 
+{ 
+	 left: 214px; 
+	 top: 973px; 
+	 position: absolute; 
+	 width: 226px;
+	 height: 20px;
+	 z-index:7;
+} 
+
+ #wwwvidAdnet 
+{ 
+	 left: 213px; 
+	 top: 1234px; 
+	 position: absolute; 
+	 width: 214px;
+	 height: 17px;
+	 z-index:8;
+} 
+
+ #Shape1copy3 
+{ 
+	 left: 54px; 
+	 top: 1168px; 
+	 position: absolute; 
+	 width: 531px;
+	 height: 4px;
+	 z-index:9;
+} 
+
+ #Shape1copy5 
+{ 
+	 left: 20px; 
+	 top: 1271px; 
+	 position: absolute; 
+	 width: 599px;
+	 height: 30px;
+	 z-index:10;
+} 
+
+ #Copyright2016 
+{ 
+	 left: 286px; 
+	 top: 1283px; 
+	 position: absolute; 
+	 width: 69px;
+	 height: 10px;
+	 z-index:11;
+} 
+
+ #Shape2 
+{ 
+	 left: 324px; 
+	 top: 1281px; 
+	 position: absolute; 
+	 width: 12px;
+	 height: 12px;
+	 z-index:12;
+} 
+
+ #VectorSmartObject_1 
+{ 
+	 left: 173px; 
+	 top: 1004px; 
+	 position: absolute; 
+	 width: 75px;
+	 height: 75px;
+	 z-index:13;
+} 
+
+ #VectorSmartObject_2 
+{ 
+	 left: 389px; 
+	 top: 1004px; 
+	 position: absolute; 
+	 width: 75px;
+	 height: 75px;
+	 z-index:14;
+} 
+
+ #layer_15 
+{ 
+	 left: 342px; 
+	 top: 1096px; 
+	 position: absolute; 
+	 width: 171px;
+	 height: 14px;
+	 z-index:15;
+} 
+
+ #layer_16 
+{ 
+	 left: 167px; 
+	 top: 1096px; 
+	 position: absolute; 
+	 width: 87px;
+	 height: 15px;
+	 z-index:16;
+} 
+
+ #layer_88817185021 
+{ 
+	 left: 361px; 
+	 top: 1123px; 
+	 position: absolute; 
+	 width: 133px;
+	 height: 20px;
+	 z-index:17;
+} 
+
+ #supportvidadnet 
+{ 
+	 left: 134px; 
+	 top: 1124px; 
+	 position: absolute; 
+	 width: 153px;
+	 height: 19px;
+	 z-index:18;
+} 
+
+ #linkedinicon 
+{ 
+	 left: 344px; 
+	 top: 1193px; 
+	 position: absolute; 
+	 width: 27px;
+	 height: 29px;
+	 z-index:19;
+} 
+
+ #twittericon 
+{ 
+	 left: 314px; 
+	 top: 1193px; 
+	 position: absolute; 
+	 width: 27px;
+	 height: 29px;
+	 z-index:20;
+} 
+
+ #facebookicon 
+{ 
+	 left: 257px; 
+	 top: 1193px; 
+	 position: absolute; 
+	 width: 27px;
+	 height: 29px;
+	 z-index:21;
+} 
+
+ #VectorSmartObject_3 
+{ 
+	 left: 286px; 
+	 top: 1194px; 
+	 position: absolute; 
+	 width: 25px;
+	 height: 28px;
+	 z-index:22;
+} 
+
+ #VectorSmartObject_4 
+{ 
+	 left: 17px; 
+	 top: 512px; 
+	 position: absolute; 
+	 width: 91px;
+	 height: 90px;
+	 z-index:23;
+} 
