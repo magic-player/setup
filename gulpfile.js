@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
-var pump = require('pump');
 var replace = require('gulp-replace');
 var connect = require('gulp-connect');
 var clean = require('gulp-clean');
@@ -20,19 +19,15 @@ gulp.task('copy', ['clean'], function() {
     gulp.src(['_headers', 'crossdomain.xml', 'vpaid.xml']).pipe(gulp.dest('dist'));
     gulp.src(['bundle/7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1'));
     gulp.src(['bundle/7.10.4/**/*', '!bundle/7.10.4/**/*.js']).pipe(gulp.dest('dist/7.10.4'));
-    gulp.src(['bundle/7.12.1/**/*', '!bundle/7.12.1/**/*.js']).pipe(gulp.dest('dist/7.12.1'));
+    return gulp.src(['bundle/7.12.1/**/*', '!bundle/7.12.1/**/*.js']).pipe(gulp.dest('dist/7.12.1'));
 });
 
 
 // JS
 gulp.task('js', ['clean', 'copy'], function (cb) {
-  pump([
-        gulp.src(['src/**/*.js', '**/*.js', '!node_modules/**/*', '!dist/**/*.js']),
-        uglify(),
-        gulp.dest('dist')
-    ],
-    cb
-  );
+  return gulp.src(['src/**/*.js', '**/*.js', '!node_modules/**/*', '!dist/**/*.js'])
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'));
 });
 
 // Clean
