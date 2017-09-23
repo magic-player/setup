@@ -1,4 +1,4 @@
-/* VidAd VPAID v1.1.0 */
+﻿/* VidAd VPAID v1.1.0 */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
