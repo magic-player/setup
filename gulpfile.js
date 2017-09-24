@@ -34,7 +34,7 @@ gulp.task('copy', ['clean'], function () {
 
 // JS
 gulp.task('js', ['clean', 'copy'], function (cb) {
-  return gulp.src(['src/**/*.js', '**/*.js', '!node_modules/**/*', '!dist/**/*.js'])
+  return gulp.src(['src/**/*.js', '**/*.js', '!vpaid/**/*', '!node_modules/**/*', '!dist/**/*.js'])
     .pipe(uglify())
     .pipe(gulp.dest('dist'));
 });
