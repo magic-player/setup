@@ -846,7 +846,7 @@ jwplayer.vast = {},
                     return clearTimeout(x), 0 === w.naturalWidth ? j() : (u(), b.style(h, {
                         top: -w.height - 8,
                         bottom: w.height - 8,
-                        left: w.width
+                        left: w.width - 21
                     }, !0), b.style(g, {
                         top: -16
                     }, !0), r([i, w]), r(h, .75), new c(w).on("click tap", k), b.isMobile() || (i.onmouseover = l, i.onmouseout = m), h.onclick = h.ontouchstart = p, g.onclick = g.ontouchstart = q, void z.trigger(f.PLAY))
