@@ -856,7 +856,7 @@ jwplayer.vast = {},
                     s([i, w, h, g]), setTimeout(v, 400), t(h), t(g)
                 }
             };
-        g.src = h.src = 'data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#191919"/><line stroke="#CCC" stroke-width="6" x1="32" y1="20" x2="32" y2="44"/><line stroke="#CCC" stroke-width="6" x1="20" y1="32" x2="44" y2="32"/></svg>', a.vast.staticplayer = function(a, c) {
+            g.src = h.src = 'data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2232%22%20fill%3D%22%23191919%22%2F%3E%3Cline%20stroke%3D%22%23CCC%22%20stroke-width%3D%226%22%20x1%3D%2232%22%20y1%3D%2220%22%20x2%3D%2232%22%20y2%3D%2244%22%2F%3E%3Cline%20stroke%3D%22%23CCC%22%20stroke-width%3D%226%22%20x1%3D%2220%22%20y1%3D%2232%22%20x2%3D%2244%22%20y2%3D%2232%22%2F%3E%3C%2Fsvg%3E', a.vast.staticplayer = function(a, c) {
             function j(a) {
                 v.trigger(e, a)
             }
@@ -902,8 +902,8 @@ jwplayer.vast = {},
                     position: "absolute",
                     width: "100%"
                 }, o)), b.style([h, g], b.extend({
-                    width: "18px",
-                    height: "18px",
+                    width: "22px",
+                    height: "22px",
                     opacity: .75
                 }, i, o)), b.style(h, {
                     transform: "rotate(45deg)"
