@@ -1,0 +1,411 @@
+﻿<head>
+    <style type="text/css">
+        @font-face {
+            font-family: 'IRANSans';
+            src: url('https://player.vidad.net/fonts/IranSans/normal-fa.woff2') format('woff2'), url('https://player.vidad.net/fonts/IranSans/normal-fa.woff') format('woff'), url('https://player.vidad.net/fonts/IranSans/normal-fa.ttf') format('truetype')
+        }
+    </style>
+
+    <script type="text/javascript">
+        function convertToPersinaNumber(value) {
+            var return_value = "";
+            var i = 0;
+            for (i = 0; i < value.length; i++) {
+                switch (value.substring(i, i + 1)) {
+                case "0":
+                    return_value += "۰";
+                    break;
+                case "1":
+                    return_value += "۱";
+                    break;
+                case "2":
+                    return_value += "۲";
+                    break;
+                case "3":
+                    return_value += "۳";
+                    break;
+                case "4":
+                    return_value += "۴";
+                    break;
+                case "5":
+                    return_value += "۵";
+                    break;
+                case "6":
+                    return_value += "۶";
+                    break;
+                case "7":
+                    return_value += "۷";
+                    break;
+                case "8":
+                    return_value += "۸";
+                    break;
+                case "9":
+                    return_value += "۹";
+                    break;
+                default:
+                    return_value += value.substring(i, i + 1);
+                    break;
+                }
+            }
+            return return_value;
+        }
+    </script>
+
+    <script type="text/javascript">
+        //var _gaq = _gaq || [];
+        //_gaq.push(['_setAccount', 'UA-32233635-1']);
+        //_gaq.push(['_trackPageview']);
+    </script>
+</head>
+<body style="direction: rtl; height: 100%; font-family: 'IRANSans';">
+    <div class="kv-feed bikroy compact-living" style="width: 100%; min-width: 230px; height: 100%;">
+        <!--<a target="_blank" href="https://www.sheypoor.com" class="kv-feed-top"></a>-->
+        <a target="_blank" href="https://www.sheypoor.com/" alt="شیپور" class="kv-feed-top" style="font-size: 12px; padding-top: 4px; font-weight: bold; line-height: 6px;">
+
+        </a>
+        <div class="kv-item-list-container" style="height: 100%;">
+
+            <div id="divRollingAd" class="kv-item-list css-anim" style="top: -2227px; animation-name: scroll-list;">
+
+            </div>
+        </div>
+    </div>
+    <input id="myRegionId" value="5" style="visibility: hidden;">
+    <input id="myRegionTitle" value="Karaj" style="visibility: hidden;">
+   <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+            font: normal 12px/1.2 IRANSans, BHoma, Tahoma, sans-serif;
+            background: #007cc4;
+            overflow: hidden;
+            min-width: 230px;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .compact-living {
+            font-size: 11px;
+        }
+
+            .compact-living .title {
+                font-size: 13px;
+            }
+
+            .compact-living .kv-item-list .price {
+                line-height: 21px;
+                font-size: 13px;
+                background: #f78e55;
+                border-radius: 10px;
+                color: #ffffff;
+            }
+
+            .compact-living .img {
+                /*max-width: 88px;*/
+                overflow: hidden;
+            }
+
+                .compact-living .img img {
+                    /*margin-left: -10px;*/
+                }
+
+        .tiny-living {
+            font-size: 10px;
+        }
+
+            .tiny-living .kv-feed-top {
+                font-size: 16px;
+            }
+
+            .tiny-living .kv-feed-logo {
+                background-size: 75% !important;
+            }
+
+            .tiny-living .kv-item-list .title {
+                font-size: 12px;
+                max-height: 28px;
+            }
+
+            .tiny-living .kv-item-list .price {
+                height: 19px;
+                padding: 0 4px 0 10px;
+                line-height: 20px;
+                font-size: 10px;
+                font-weight: normal;
+                background: #ffde00 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAUCAIAAADOcrCxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2OTU2NDZGMzgwMzkxMUUzQjhBOURFODNFMEE2MTFCOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2OTU2NDZGNDgwMzkxMUUzQjhBOURFODNFMEE2MTFCOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY5NTY0NkYxODAzOTExRTNCOEE5REU4M0UwQTYxMUI4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY5NTY0NkYyODAzOTExRTNCOEE5REU4M0UwQTYxMUI4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ESHgGAAAAQtJREFUeNpkkb9KA0EYxH+7dxEMaCwUggTU0tpSfAArK19ASOGriM8gWIqdFj6KokQ8NCGnWOQCmlzuvs+9v544xbLMzs5+O2M0utPwEHsA32DIYVRTHfaJLvCo4VglCTTYJV3C+JA61mZH/pZZv0Qm0EZnaGzLO51jVvukr5g10NyhwOJFgx1kGdOqtCq0ts3GFeIm6aAlpFjl7UTuqVnNRnSIB/JEw7fwMZbJteUPcoW38s8hGcqg29Rme30/Jx5XWsmF0a08II+9xmvJUIM90tB979dBP85YOGoTnVfa6Y2OjrA99NMFWbL63CWZYtrOKAsxo0anzEM8H/2qUncNjV1D+zCrG/oRYACmPrJb0NZzBAAAAABJRU5ErkJggg==") no-repeat;
+                z-index: 0;
+            }
+
+            .tiny-living .img {
+                z-index: 1;
+                position: relative;
+                max-width: 70px;
+                max-height: 80px;
+                overflow: hidden;
+            }
+
+                .tiny-living .img img {
+                    margin-left: -25px;
+                }
+
+
+        .location {
+            margin: 7px 0 12px 0;
+        }
+
+        .kv-feed-top {
+            display: block;
+            background: #0079c2;
+            color: #fff;
+            text-align: center;
+            padding: 0px 16px;
+            font-size: 22px;
+            box-shadow: 0 4px 4px rgba(50, 50, 50, 0.3);
+            position: relative;
+            z-index: 1;
+            background: #0079c2 url("elements/logo.jpg") center 50% no-repeat;
+            height: 30px;
+        }
+
+            .kv-feed-top:hover {
+                color: #fff;
+                background-color: #007cc4;
+            }
+
+        .kv-item-list-container {
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .kv-item-list {
+            position: absolute;
+            width: 100%;
+        }
+
+            .kv-item-list a {
+                position: relative;
+                zoom: 1;
+                color: #000;
+                display: block;
+                padding: 3px;
+                overflow: hidden;
+                margin: 2px;
+                background: #fff;
+            }
+
+                .kv-item-list a .img {
+                    float: right;
+                    margin-left: 8px;
+                }
+
+                .kv-item-list a:hover {
+                    box-shadow: 0 0 8px #fff;
+                    img;
+                }
+
+                    .kv-item-list a:hover .title {
+                        color: #000;
+                    }
+
+            .kv-item-list .title {
+                color: #3c3c3c;
+                font-weight: bold;
+                font-size: 12px;
+                margin-top: 4px;
+                max-height: 32px;
+                overflow: hidden;
+            }
+
+            .kv-item-list .price {
+                font-size: 14px;
+                height: 31px;
+                line-height: 31px;
+                padding: 1px 5px;
+                font-weight: bold;
+                background: #f78e55;
+                margin: 0;
+            }
+
+        a.kv-feed-logo {
+            display: block;
+            box-shadow: 0 -4px 4px rgba(50, 50, 50, 0.3);
+            position: relative;
+            z-index: 2;
+            height: 24px;
+            text-align: center;
+            color: #fff;
+            padding-top: 10px;
+            background: #0079c2 center 50% no-repeat;
+        }
+
+            a.kv-feed-logo:hover {
+                background-color: #0079c2;
+            }
+
+        .bikroy .kv-feed-logo {
+            background-color: #0079c2;
+        }
+
+        .tonaton .kv-feed-logo {
+            background: #0079c2;
+        }
+
+        .ikman .kv-feed-logo {
+            background: #0079c2;
+        }
+
+        .efritin .kv-feed-logo {
+            background: #0079c2;
+        }
+
+        .kv-item-list {
+            -webkit-animation-duration: 60s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-duration: 60s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes scroll-list {
+            100% {
+                top: 0;
+            }
+        }
+
+        @-moz-keyframes scroll-list {
+            100% {
+                top: 0;
+            }
+        }
+
+        @-ms-keyframes scroll-list {
+            100% {
+                top: 0;
+            }
+        }
+
+        .kv-item-list:hover {
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+        }
+
+        @-webkit-keyframes fly-in {
+            0% {
+                -webkit-transform: scale(0);
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @-moz-keyframes fly-in {
+            0% {
+                -moz-transform: scale(0);
+            }
+
+            100% {
+                -moz-transform: scale(1);
+            }
+        }
+
+        .kv-item-list.css-anim a {
+            -webkit-animation-fill-mode: forwards;
+            -webkit-transform: scale(0);
+            -webkit-animation-duration: 1200ms;
+            -webkit-animation-timing-function: ease;
+            -moz-animation-fill-mode: forwards;
+            -moz-transform: scale(0);
+            -moz-animation-duration: 1200ms;
+            -moz-animation-timing-function: ease;
+        }
+
+        .kv-item-list:hover a {
+            -webkit-transition: opacity 500ms ease;
+            -moz-transition: opacity 500ms ease;
+            opacity: .5;
+        }
+
+        .kv-item-list a:hover {
+            -webkit-transition: none;
+            -moz-transition: none;
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var wls = '?callback=func&count=30&lang=fa-IR&offset=0&sortPresetID=n&withImage=yes&utm_source=AdNegah&utm_medium=NativeAd&utm_campaign=RollingAd-092017&utm_content=vd';
+
+        var region = document.getElementById("myRegionTitle").value;
+        var regionIdd = document.getElementById("myRegionId").value;
+
+        function func(data) {
+            var divRA = document.getElementById("divRollingAd");
+
+            for (var i = 0; i < data.listings.length; i++) {
+                if (typeof data.listings[i].attributes == undefined || data.listings[i].attributes.length <= 0) {
+                    continue;
+                }
+                divRA.innerHTML +=
+                        "<a href='https://www.sheypoor.com/" + data.listings[i].listingID
+                        //+ (window.location.search.search('utm') > -1 ? window.location.search : '') +
+                        + wls +
+                        "' target='_blank' rel='nofollow' style='animation-name: fly-in;'>" +
+                        "<div class='img'><img src='" + data.listings[i].thumbImageURL.replace("http:", "https:") + "' alt='" + data.listings[i].title + "' width='120px' height='90px'></div>" +
+                        "<div class='title'>" + (data.listings[i].title.length > 30 ? data.listings[i].title.substring(0, 27) + '...' : data.listings[i].title) + "</div>" +
+                        "<div class='location'>" + data.listings[i].locationName + "</div>" +
+                        "<div class='title'><span class='price'>" +
+                        (data.listings[i].attributes[0].attributeID == "1" ?
+                            convertToPersinaNumber(data.listings[i].attributes[0].attributeValue) + (data.listings[i].attributes[0].attributeValue != "توافقی" ? " تومان" : "") :
+                            "") +
+                        (data.listings[i].attributes[0].attributeID == "68090" || data.listings[i].attributes[0].attributeID == "68091" ?
+                            convertToPersinaNumber(data.listings[i].attributes[0].attributeValue) + " رهن " : "") +
+                        (data.listings[i].attributes[0].attributeID == "68092" || data.listings[i].attributes[0].attributeID == "68093" ?
+                            convertToPersinaNumber(data.listings[i].attributes[0].attributeValue) + " اجاره " : "") +
+                        //(data.listings[i].attributes.length > 1 ?
+                        //    (data.listings[i].attributes[1].attributeID == "68092" || data.listings[i].attributes[1].attributeID == "68093" ?
+                        //        " و اجاره " + convertToPersinaNumber(data.listings[i].attributes[1].attributeValue) : "") +
+                        //    (data.listings[i].attributes[1].attributeID == "68090" || data.listings[i].attributes[1].attributeID == "68091" ?
+                        //        " و رهن " + convertToPersinaNumber(data.listings[i].attributes[1].attributeValue) : "") : "") +
+                        "</span></div>" +
+                        "</a>";
+            }
+            //console.log('1:' + regionIdd);
+            //console.log('2:' + region);
+        }
+
+        var script = document.createElement('script');
+
+        script.src = 'https://www.sheypoor.com/api/v3/listings' + wls;
+                //+ (window.location.search.search('callback=func') > -1 ? window.location.search : '?callback=func&count=30&lang=fa-IR&offset=0&sortPresetID=n&withImage=yes')
+                //+ ((window.location.search.indexOf('IpProvince') > -1) || (regionIdd = 'undefined') ? '' : '&provinceID=' + regionIdd)
+            //+ (window.location.search.indexOf('IpCity') > 0 ? '&cityID=' + City : '')
+            ;
+        //console.log('5:' + 'https://www.sheypoor.com/api/v3/listings'
+        //    + (window.location.search.length > -1 ? window.location.search : '?callback=func&count=30&lang=fa-IR&offset=0&sortPresetID=n&withImage=yes')
+        //    + ((window.location.search.indexOf('IpProvince') > -1) || (regionIdd = 'undefined') ? '' : '&provinceID=' + regionIdd)
+        //    //+ (window.location.search.indexOf('IpCity') > 0 ? '&cityID=' + City : '')
+        //);
+        //console.log('3:' + (window.location.search.indexOf('IpProvince') > -1 || (regionId = 'undefined') ? '' : '&provinceID=' + regionId));
+        //console.log('4:' + regionIdd);
+
+        document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
+    <script type="text/javascript">  (function() {
+        var ga = document.createElement('script');     ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>
