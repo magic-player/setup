@@ -1,3 +1,5 @@
+// JWPlayer VAST Plugin
+// Based on version 7.1 of the original plugin
 jwplayer.vast = {},
     function(a) {
         function b(b) {
@@ -2134,20 +2136,7 @@ jwplayer.vast = {},
                     a.jwplayerEntitlements = b(), "object" == typeof module && module.exports ? module.exports = b() : "function" == typeof define && define.amd && define([], b)
                 }(this, function() {
                     return function(a, b, c) {
-                        var d = new a.key(b).token(),
-                        e = ["https://player.vidad.net/7.9.1/all.json"];
-                        "file:" === window.location.protocol && e.unshift("https:");
-                        var f = {
-                            canPlayAds: !0
-                        };
-                        a.ajax(e.join(""), function(a) {
-                            f.canPlayAds = !a || !a.response || a.response.canPlayAds !== !1, c(f)
-                        }, function() {
-                            c(f)
-                        }, {
-                            timeout: 1e4,
-                            responseType: "json"
-                        })
+                        c({canPlayAds: 1});
                     }
                 });
             var ra = oa.key;
