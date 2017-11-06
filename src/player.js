@@ -1105,7 +1105,7 @@ window.jwplayer = function(e) {
     var i, o;
     i = [], o = function() {
         return {
-            repo: "https://player.vidad.net/",
+            repo: "http://127.0.0.1:5500/bundle/",
             SkinsIncluded: ["seven"],
             SkinsLoadable: ["beelden", "bekle", "five", "glow", "roundster", "six", "stormtrooper", "vapor"],
             dvrSeekLimit: -25
