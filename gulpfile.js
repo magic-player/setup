@@ -4,7 +4,13 @@ var replace = require('gulp-replace');
 var connect = require('gulp-connect');
 var clean = require('gulp-clean');
 var merge = require('merge-stream');
-var wait = require('gulp-wait2');
+var rename = require("gulp-rename");
+
+
+// Build Parameters
+var domain = 'https://player.vidad.net/';
+var bundledPlayerVersion = '7.9.1';
+var distJWP = 'dist/jwp/' + bundledPlayerVersion;
 
 
 // Aliases
@@ -12,30 +18,40 @@ gulp.task('default', ['serve']);
 
 
 // Build
-gulp.task('build', ['copy', 'js'], function () {
-  return gulp.src('README.md')
-    .pipe(wait(1000));
-});
+gulp.task('build', ['copy', 'vast', 'player']);
+gulp.task('build:dev', [], function () {
+  domain = 'http://localhost:5000/';
+  gulp.start('build');
+})
 
 
 // Copy
 gulp.task('copy', ['clean'], function () {
   return merge(
-    gulp.src(['*.html']).pipe(replace('src="/src/player.js"', 'src="/player.js"')).pipe(gulp.dest('dist')),
+    gulp.src(['index.html']).pipe(gulp.dest('dist')),
     gulp.src(['fonts/**/*', 'content/**/*', 'icons/**/*', 'vpaid/**/*', 'check/**/*'], {base: '.'}).pipe(gulp.dest('dist')),
-    gulp.src(['*.ico', '*.gif', '*.jpg', '*.png']).pipe(gulp.dest('dist')),
-    gulp.src(['_headers', 'crossdomain.xml', 'vpaid.xml']).pipe(gulp.dest('dist')),
-    gulp.src(['bundle/7.9.1/**/*']).pipe(gulp.dest('dist/7.9.1')),
-    gulp.src(['bundle/7.10.4/**/*', '!bundle/7.10.4/**/*.js']).pipe(gulp.dest('dist/7.10.4')),
-    gulp.src(['bundle/7.12.1/**/*', '!bundle/7.12.1/**/*.js']).pipe(gulp.dest('dist/7.12.1'))
+    gulp.src(['favicon.ico', 'ping.gif']).pipe(gulp.dest('dist')),
+    gulp.src(['_headers', 'crossdomain.xml']).pipe(gulp.dest('dist')),
+    gulp.src(['bundle/' + bundledPlayerVersion + '/**/*']).pipe(gulp.dest(distJWP))
   );
 });
 
 
-// JS
-gulp.task('js', ['clean', 'copy'], function (cb) {
-  return gulp.src(['src/**/*.js', '**/*.js', '!vpaid/**/*', '!node_modules/**/*', '!dist/**/*.js'])
+// VAST
+gulp.task('vast', ['clean'], function (cb) {
+  return merge(
+    gulp.src(['vast/**/*.js']).pipe(uglify()).pipe(gulp.dest(distJWP)),
+    gulp.src(['vast/vast.swf']).pipe(gulp.dest(distJWP))
+  );
+});
+
+
+// Main Player File
+gulp.task('player', ['clean'], function (cb) {
+  return gulp.src(['bundle/' + bundledPlayerVersion + '/jwplayerv.js'])
+    .pipe(replace('http://ssl.p.jwpcdn.com/player/v/', domain + 'jwp/'))
     .pipe(uglify())
+    .pipe(rename('player.js'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -53,4 +69,3 @@ gulp.task('serve', function() {
     port: 8080
   });
 });
-

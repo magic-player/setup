@@ -8,6 +8,7 @@
     "gulp-clean": "~0",
     "gulp-connect": "~5",
     "gulp-replace": "~0",
+    "gulp-rename": "~1",
     "gulp-uglify": "~1",
     "gulp-wait2": "~0",
     "merge-stream": "~1"
