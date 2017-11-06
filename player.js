@@ -1105,7 +1105,7 @@ window.jwplayer = function(e) {
     var i, o;
     i = [], o = function() {
         return {
-            repo: "https://player.vidad.net/",
+            repo:"",
             SkinsIncluded: ["seven"],
             SkinsLoadable: ["beelden", "bekle", "five", "glow", "roundster", "six", "stormtrooper", "vapor"],
             dvrSeekLimit: -25
@@ -7571,4 +7571,3 @@ window.jwplayer = function(e) {
         }), n
     }.apply(t, i), !(void 0 !== o && (e.exports = o))
 }]);
-jwplayer.key="olrKKZf"+"glab".toUpperCase()+"894ClZKwJ+Pd29CElpZ2kuqlnjA==";
