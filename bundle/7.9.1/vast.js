@@ -435,6 +435,11 @@ jwplayer.vast = {},
                 return a.on(d, b, A), d
             }
 
+            /**
+             * VAST Request
+             *
+             * @param a: VAST url
+             */
             function k(a) {
                 var b = function(b) {
                         m(b, a)
@@ -451,6 +456,14 @@ jwplayer.vast = {},
                     g = function(b) {
                         f.log(b), t(b, a)
                     };
+
+                // Append player size information to the url
+                if (a.indexOf('?') === -1) a += '?'; else a += '&';
+                a += 'sw=' + window.screen.width.toString();
+                a += '&sh=' + window.screen.height.toString();
+                a += '&pw=' + c.getWidth().toString();
+                a += '&ph=' + c.getHeight().toString();
+
                 return f.ajax(a, b, d, {
                     withCredentials: !0,
                     retryWithoutCredentials: !0,
