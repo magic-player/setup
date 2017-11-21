@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Magic Player Demo</title>
+</head>
+<body style='padding:0;margin:0px;background-color:#000;color:#FFF;'>
+	<div style="margin: 0 auto; width: 80%;">
+		<h4 style="text-align: center; margin: 5px;">Magic Player Demo</h4>
+		<div id="player">Loading the player...</div>
+	</div>
+	<script type="text/javascript" src="/src/player.js"></script>
+ 	<script type="text/javascript">jwplayer.key = "rQSbaJxRwqWMhh3YVb2YSWzSnxtzpgHIXI+4sQ=="</script>
+	<script type="text/javascript">
+		jwplayer("player").setup({
+			file:"/content/other/penguin.mp4",
+			width: "100%",
+			aspectratio: "16:9",
+			advertising: {
+				client: 'vast',
+				schedule:"https://s.vidad.net/vmap/lV4vbCS9/53255",
+				vpaidmode:"enabled",
+			},
+		});
+	</script>
+</body>
+</html>
