@@ -461,8 +461,10 @@ jwplayer.vast = {},
                 if (a.indexOf('?') === -1) a += '?'; else a += '&';
                 a += 'sw=' + window.screen.width.toString();
                 a += '&sh=' + window.screen.height.toString();
-                a += '&pw=' + c.getWidth().toString();
-                a += '&ph=' + c.getHeight().toString();
+                if (c && c.getWidth)
+                    a += '&pw=' + c.getWidth().toString();
+                if (c && c.getHeight)
+                    a += '&ph=' + c.getHeight().toString();
 
                 return f.ajax(a, b, d, {
                     withCredentials: !0,
